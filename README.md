@@ -114,6 +114,7 @@ return (
   <form>
     <label htmlFor="issueType">Type of Issue:</label>
     <select id="issueType">
+      <option value="" disabled selected>Select your issue</option>
       <option value="outage">Service Outage</option>
       <option value="billing">Billing</option>
       <option value="cancel">Cancel Service</option>
@@ -193,6 +194,7 @@ Lastly, we just have to connect each element's `value` attribute to it's corresp
 <form onSubmit={handleSubmit}>
   <label htmlFor="issueType">Type of Issue:</label>
   <select id="issueType" onChange={handleChange} value={formState.issueType}>
+    <option value="" disabled selected>Select your issue</option>
     <option value="outage">Service Outage</option>
     <option value="billing">Billing</option>
     <option value="cancel">Cancel Service</option>
