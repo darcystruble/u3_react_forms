@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  color:white;
+}
+#issueType, #subject, #message{
+  display:block;
+  margin: 0 auto;
+}
